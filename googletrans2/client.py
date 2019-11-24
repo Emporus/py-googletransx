@@ -8,12 +8,12 @@ import requests
 from requests.exceptions import HTTPError
 import random
 
-from googletrans import urls, utils
-from googletrans.adapters import TimeoutAdapter
-from googletrans.compat import PY3
-from googletrans.gtoken import TokenAcquirer
-from googletrans.constants import DEFAULT_USER_AGENT, LANGCODES, LANGUAGES, SPECIAL_CASES
-from googletrans.models import Translated, Detected
+from googletrans2 import urls, utils
+from googletrans2.adapters import TimeoutAdapter
+from googletrans2.compat import PY3
+from googletrans2.gtoken import TokenAcquirer
+from googletrans2.constants import DEFAULT_USER_AGENT, LANGCODES, LANGUAGES, SPECIAL_CASES
+from googletrans2.models import Translated, Detected
 
 
 EXCLUDES = ('en', 'ca', 'fr')
