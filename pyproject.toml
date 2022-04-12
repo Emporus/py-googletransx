@@ -1,0 +1,49 @@
+[tool.poetry]
+name = "googletransx"
+version = "2.4.2"
+description = "Fork of an Free Google Translate API for Python. Translates totally free of charge."
+readme = "README.rst"
+authors = [
+    "x0rxkov <x0rxkov@gmail.com>",
+    "Slava Shor <slava.shor@emporus.com>"
+]
+license = "MIT"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Education",
+    "Intended Audience :: End Users/Desktop",
+    "License :: Freeware",
+    "Operating System :: POSIX",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS :: MacOS X",
+    "Topic :: Education",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 2.7",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7"
+]
+homepage = "https://github.com/Emporus/py-googletransx"
+repository = "https://github.com/Emporus/py-googletransx"
+packages = [{ include = "googletransx", from = "." }]
+
+[tool.poetry.scripts]
+translate = "googletransx.translate:main"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "*"
+hyper = { version = "^0.7.0", optional = true }
+
+[tool.poetry.extras]
+h2 = ["hyper"]
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.1.1"
+coveralls = "^3.3.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
