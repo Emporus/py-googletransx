@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 import os.path
 import re
@@ -16,14 +16,14 @@ def get_file(*paths):
 
 
 def get_version():
-    init_py = get_file(os.path.dirname(__file__), 'googletrans', '__init__.py')
+    init_py = get_file(os.path.dirname(__file__), 'googletransx', '__init__.py')
     pattern = r"{0}\W*=\W*'([^']+)'".format('__version__')
     version, = re.findall(pattern, init_py)
     return version
 
 
 def get_description():
-    init_py = get_file(os.path.dirname(__file__), 'googletrans', '__init__.py')
+    init_py = get_file(os.path.dirname(__file__), 'googletransx', '__init__.py')
     pattern = r'"""(.*?)"""'
     description, = re.findall(pattern, init_py, re.DOTALL)
     return description
@@ -35,14 +35,14 @@ def get_readme():
 
 def install():
     setup(
-        name='googletrans',
+        name='googletransx',
         version=get_version(),
         description=get_description(),
         long_description=get_readme(),
         license='MIT',
-        author='SuHun Han',
-        author_email='ssut' '@' 'ssut.me',
-        url='https://github.com/ssut/py-googletrans',
+        author='x0rxkov',
+        author_email='x0rxkov' '@' 'gmail.com',
+        url='https://github.com/x0rkov/py-googletrans',
         classifiers=['Development Status :: 5 - Production/Stable',
                      'Intended Audience :: Education',
                      'Intended Audience :: End Users/Desktop',

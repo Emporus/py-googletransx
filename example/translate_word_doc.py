@@ -1,5 +1,5 @@
 from docx import Document
-from googletrans import Translator
+from googletransx import Translator
 
 
 def translate_doc(filename, destination='zh-CN', mix=True):
