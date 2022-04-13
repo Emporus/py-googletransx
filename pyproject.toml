@@ -40,7 +40,7 @@ hyper = { version = "^0.7.0", optional = true }
 h2 = ["hyper"]
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^7.1.1"
+pytest = "^6"
 coveralls = "^3.3.1"
 
 
