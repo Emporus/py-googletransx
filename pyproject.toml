@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "emporus-googletransx"
-version = "2.4.3"
+version = "2.4.4"
 description = "Fork of an Free Google Translate API for Python. Translates totally free of charge."
 readme = "README.rst"
 authors = [
