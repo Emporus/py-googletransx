@@ -32,7 +32,7 @@ packages = [{ include = "googletransx", from = "." }]
 translate = "googletransx.translate:main"
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.6"
 requests = "*"
 hyper = { version = "^0.7.0", optional = true }
 
